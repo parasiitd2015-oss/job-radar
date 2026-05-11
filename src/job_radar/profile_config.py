@@ -5,9 +5,95 @@ from __future__ import annotations
 PROFILE_NAME = "Paras Bhaisora"
 PROFILE_YOE = 7
 PROFILE_LEVEL_TARGETS = [
+
+    # Existing
     "senior", "sr.", "sr ", "lead", "principal", "staff",
     "director", "head of", "vp ", "vice president",
-    "chief of staff", "cos ", "manager iii", "manager 3",
+    "chief of staff", "cos ", "manager iii", "manager 3", "cbo",
+
+    # Founder / Office of CEO / Strategic Leadership
+    "founder's office",
+    "founders office",
+    "office of the ceo",
+    "office of ceo",
+    "ceo office",
+    "strategy and operations",
+    "strategic initiatives",
+    "business operations",
+    "bizops",
+    "business strategy",
+    "corporate strategy",
+    "growth strategy",
+    "revenue strategy",
+    "special projects",
+    "executive office",
+    "executive strategy",
+    "chief executive office",
+    "ceo strategist",
+    "strategic partnerships",
+    "partnerships lead",
+    "strategic growth",
+
+    # Entrepreneur / Venture / EIR
+    "entrepreneur in residence",
+    "eir",
+    "venture builder",
+    "venture lead",
+    "new initiatives",
+    "incubation lead",
+    "startup program manager",
+    "venture studio",
+    "innovation lead",
+
+    # Growth / GTM / Revenue
+    "growth lead",
+    "growth manager",
+    "head of growth",
+    "growth and strategy",
+    "growth operations",
+    "revenue operations",
+    "revops",
+    "go to market",
+    "gtm lead",
+    "market expansion",
+    "category lead",
+    "marketplace growth",
+    "user acquisition lead",
+
+    # Product + Business Hybrid
+    "product strategy",
+    "product operations",
+    "business program manager",
+    "program lead",
+    "strategy manager",
+    "operations manager",
+    "commercial strategy",
+    "monetization strategy",
+
+    # Investor / VC / Startup Ecosystem
+    "investment associate",
+    "investment analyst",
+    "venture capital",
+    "portfolio operations",
+    "platform lead",
+    "startup partnerships",
+
+    # Leadership / High Ownership
+    "general manager",
+    "gm ",
+    "country manager",
+    "business head",
+    "p&l owner",
+    "vertical lead",
+    "expansion lead",
+    "transformation office",
+
+    # AI / Emerging Tech Strategic Roles
+    "ai strategy",
+    "ai operations",
+    "chief ai officer",
+    "genai strategy",
+    "automation strategy",
 ]
 
 # Negative title signals — drop any role whose title contains these
