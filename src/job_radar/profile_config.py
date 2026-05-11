@@ -241,7 +241,11 @@ ADZUNA_COUNTRIES = ["in", "gb", "sg", "ae", "au"]  # India, UK, Singapore, UAE, 
 # Greenhouse / Lever companies to poll directly (free, no scraping)
 # Format: (display_name, slug_or_token, board_type)
 DIRECT_BOARDS = [
-    # Greenhouse
+
+    # =========================
+    # GREENHOUSE
+    # =========================
+
     ("Stripe", "stripe", "greenhouse"),
     ("Notion", "notion", "greenhouse"),
     ("Figma", "figma", "greenhouse"),
@@ -261,7 +265,43 @@ DIRECT_BOARDS = [
     ("Postman", "postman", "greenhouse"),
     ("Razorpay", "razorpay", "greenhouse"),
     ("BrowserStack", "browserstack", "greenhouse"),
-    # Lever
+    ("Canva", "canva", "greenhouse"),
+    ("Databricks", "databricks", "greenhouse"),
+    ("Snowflake", "snowflake", "greenhouse"),
+    ("HubSpot", "hubspot", "greenhouse"),
+    ("Coinbase", "coinbase", "greenhouse"),
+    ("Cloudflare", "cloudflare", "greenhouse"),
+    ("Hashicorp", "hashicorp", "greenhouse"),
+    ("Snyk", "snyk", "greenhouse"),
+    ("Cockroach Labs", "cockroachlabs", "greenhouse"),
+    ("Scale AI", "scaleai", "greenhouse"),
+    ("Perplexity", "perplexity", "greenhouse"),
+    ("Glean", "glean", "greenhouse"),
+    ("Deel", "deel", "greenhouse"),
+    ("Remote", "remote", "greenhouse"),
+    ("Zapier", "zapier", "greenhouse"),
+    ("Webflow", "webflow", "greenhouse"),
+    ("Framer", "framer", "greenhouse"),
+    ("Retool", "retool", "greenhouse"),
+    ("Airtable", "airtable", "greenhouse"),
+    ("ClickUp", "clickup", "greenhouse"),
+    ("Amplitude", "amplitude", "greenhouse"),
+    ("Mixpanel", "mixpanel", "greenhouse"),
+    ("Datadog", "datadog", "greenhouse"),
+    ("Elastic", "elastic", "greenhouse"),
+    ("Confluent", "confluent", "greenhouse"),
+    ("Redis", "redis", "greenhouse"),
+    ("MongoDB", "mongodb", "greenhouse"),
+    ("Mistral", "mistral", "greenhouse"),
+    ("HuggingFace", "huggingface", "greenhouse"),
+    ("Palantir", "palantir", "greenhouse"),
+    ("Anduril", "anduril", "greenhouse"),
+    ("Cohere", "cohere", "greenhouse"),
+
+    # =========================
+    # LEVER
+    # =========================
+
     ("Deel", "deel", "lever"),
     ("Remote.com", "remotecom", "lever"),
     ("CRED", "cred", "lever"),
@@ -271,4 +311,92 @@ DIRECT_BOARDS = [
     ("Meesho", "meesho", "lever"),
     ("Slice", "sliceit", "lever"),
     ("Freshworks", "freshworks", "lever"),
+    ("CoinDCX", "coindcx", "lever"),
+    ("CoinSwitch", "coinswitch", "lever"),
+    ("Acko", "acko", "lever"),
+    ("Navi", "navi", "lever"),
+    ("Jupiter", "jupiter", "lever"),
+    ("Fi Money", "epifi", "lever"),
+    ("BharatPe", "bharatpe", "lever"),
+    ("ShareChat", "sharechat", "lever"),
+    ("MPL", "mplgaming", "lever"),
+    ("Dream11", "dream11", "lever"),
+    ("Urban Company", "urbancompany", "lever"),
+    ("Lenskart", "lenskart", "lever"),
+    ("Swiggy", "swiggy", "lever"),
+    ("Zomato", "zomato", "lever"),
+    ("PhysicsWallah", "physicswallah", "lever"),
+    ("upGrad", "upgrad", "lever"),
+    ("Apna", "apna", "lever"),
+    ("Cars24", "cars24", "lever"),
+    ("Spinny", "spinny", "lever"),
+    ("Porter", "porter", "lever"),
+    ("BlackBuck", "blackbuck", "lever"),
+    ("Delhivery", "delhivery", "lever"),
+    ("Shiprocket", "shiprocket", "lever"),
+    ("Infra.Market", "inframarket", "lever"),
+    ("Chargebee", "chargebee", "lever"),
+    ("MoEngage", "moengage", "lever"),
+    ("CleverTap", "clevertap", "lever"),
+    ("Darwinbox", "darwinbox", "lever"),
+    ("Whatfix", "whatfix", "lever"),
+    ("Innovaccer", "innovaccer", "lever"),
+    ("HighRadius", "highradius", "lever"),
+    ("Yellow.ai", "yellowdotai", "lever"),
+    ("Uniphore", "uniphore", "lever"),
+    ("Gupshup", "gupshup", "lever"),
+    ("DevRev", "devrev", "lever"),
+    ("Rocketlane", "rocketlane", "lever"),
+    ("Hasura", "hasura", "lever"),
+    ("Observe.ai", "observeai", "lever"),
+
+    # =========================
+    # ASHBY
+    # =========================
+
+    ("Cursor", "cursor", "ashby"),
+    ("Replit", "replit", "ashby"),
+    ("Windsurf", "windsurf", "ashby"),
+    ("Harvey", "harvey", "ashby"),
+    ("Turing", "turing", "ashby"),
+    ("Runway", "runway", "ashby"),
+    ("ElevenLabs", "elevenlabs", "ashby"),
+    ("Character AI", "characterai", "ashby"),
+    ("Groq", "groq", "ashby"),
+    ("Suno", "suno", "ashby"),
+
+    # =========================
+    # WELLFOUND / ANGELLIST
+    # =========================
+
+    ("AngelList", "angellist", "wellfound"),
+    ("Wellfound", "wellfound", "wellfound"),
+
+    # =========================
+    # YC JOBS
+    # =========================
+
+    ("Y Combinator", "ycombinator", "yc"),
+
+    # =========================
+    # REMOTE-FIRST JOB BOARDS
+    # =========================
+
+    ("RemoteOK", "remoteok", "remoteok"),
+    ("WeWorkRemotely", "weworkremotely", "remote"),
+    ("Remotive", "remotive", "remote"),
+    ("FlexJobs", "flexjobs", "remote"),
+
+    # =========================
+    # INDIA JOB PLATFORMS
+    # =========================
+
+    ("LinkedIn", "linkedin", "aggregator"),
+    ("Naukri", "naukri", "aggregator"),
+    ("Foundit", "foundit", "aggregator"),
+    ("CutShort", "cutshort", "aggregator"),
+    ("Instahyre", "instahyre", "aggregator"),
+    ("Hirist", "hirist", "aggregator"),
+    ("IIMJobs", "iimjobs", "aggregator"),
+    ("Wellfound India", "wellfound-india", "aggregator"),
 ]
