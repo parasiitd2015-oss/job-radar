@@ -107,24 +107,202 @@ TITLE_BLOCKLIST = [
     "store manager", "retail", "telecaller", "field sales",
     "accountant", "hr executive", "delivery boy", "rider",
 ]
+# ============================================
+# Tier-1 function keywords (highest priority)
+# Founder-office / Strategy / GTM / Growth
+# ============================================
 
-# Tier-1 function keywords (your main targets)
 TIER1_KEYWORDS = [
-    "growth", "strategy", "chief of staff", "business development",
-    "partnerships", "investor", "operations strategy", "go to market",
-    "go-to-market", "gtm",
+
+    # Strategy / Leadership
+    "strategy",
+    "business strategy",
+    "corporate strategy",
+    "growth strategy",
+    "revenue strategy",
+    "commercial strategy",
+    "market strategy",
+    "strategic initiatives",
+    "strategic projects",
+    "special projects",
+
+    # Founder Office / CEO Office
+    "chief of staff",
+    "cos ",
+    "founder's office",
+    "founders office",
+    "office of the ceo",
+    "office of ceo",
+    "ceo office",
+    "executive office",
+
+    # Growth / Revenue / GTM
+    "growth",
+    "growth lead",
+    "head of growth",
+    "growth operations",
+    "growth manager",
+    "revenue operations",
+    "revops",
+    "go to market",
+    "go-to-market",
+    "gtm",
+    "gtm strategy",
+    "market expansion",
+    "marketplace growth",
+    "user acquisition",
+
+    # Business Ops / BizOps
+    "business operations",
+    "bizops",
+    "operations strategy",
+    "program management",
+    "business program manager",
+    "transformation office",
+
+    # Partnerships / Expansion
+    "business development",
+    "strategic partnerships",
+    "partnerships",
+    "alliances",
+    "ecosystem partnerships",
+    "channel partnerships",
+
+    # Founder / Venture / EIR
+    "entrepreneur in residence",
+    "eir",
+    "venture builder",
+    "venture lead",
+    "new initiatives",
+    "incubation",
+    "innovation",
+
+    # Investment / VC
+    "investor",
+    "investment associate",
+    "investment analyst",
+    "venture capital",
+    "portfolio operations",
+
+    # Leadership
+    "general manager",
+    "gm ",
+    "business head",
+    "category lead",
+    "vertical lead",
+    "country manager",
 ]
 
-# Tier-2 function keywords (PM and adjacent)
+# ============================================
+# Tier-2 function keywords
+# Product / Monetization / AI / Ops Hybrid
+# ============================================
+
 TIER2_KEYWORDS = [
-    "product manager", "product management", "product lead",
-    "product marketing", "product strategy", "ai product",
+
+    # Product
+    "product manager",
+    "product management",
+    "product lead",
+    "group product manager",
+    "senior product manager",
+    "product owner",
+
+    # Product Strategy
+    "product strategy",
+    "product operations",
+    "product growth",
+    "product analytics",
+    "platform product",
+
+    # Product Marketing
+    "product marketing",
+    "growth marketing",
+    "performance marketing",
+    "lifecycle marketing",
+
+    # AI / Tech
+    "ai product",
+    "genai",
+    "artificial intelligence",
+    "machine learning",
+    "automation",
+
+    # Revenue / Monetization
+    "monetization",
+    "pricing strategy",
+    "revenue growth",
+
+    # Startup Ops
+    "startup operations",
+    "cross functional",
+    "founding team",
+    "operator",
+
+    # Analytics
+    "business analyst",
+    "strategy analyst",
+    "growth analyst",
 ]
 
-# Bonus signals in title
+# ============================================
+# Bonus scoring keywords
+# Adds extra score if found in title/company
+# ============================================
+
 TITLE_BONUS_KEYWORDS = [
-    "ai", "fintech", "saas", "b2b", "enterprise",
-    "platform", "monetization", "revenue",
+
+    # AI
+    "ai",
+    "genai",
+    "llm",
+    "machine learning",
+    "artificial intelligence",
+    "automation",
+    "agentic",
+
+    # SaaS / B2B
+    "saas",
+    "b2b",
+    "enterprise",
+    "platform",
+    "api",
+
+    # Revenue / Business
+    "monetization",
+    "revenue",
+    "growth",
+    "commercial",
+
+    # Fintech
+    "fintech",
+    "payments",
+    "lending",
+    "wealthtech",
+    "insurtech",
+
+    # Startup / Scale
+    "0 to 1",
+    "zero to one",
+    "scale",
+    "high growth",
+    "hypergrowth",
+
+    # Data / Infra
+    "data",
+    "analytics",
+    "cloud",
+    "infrastructure",
+
+    # Consumer Internet
+    "marketplace",
+    "consumer",
+    "creator economy",
+
+    # Leadership Signals
+    "founding",
+    "strategy",
+    "special projects",
 ]
 
 # Industry/JD bonus signals
@@ -149,9 +327,7 @@ LOCATIONS_PREFERRED = [
     "singapore", "sgp",
     "dubai", "uae", "abu dhabi",
     "london", "uk ", "united kingdom",
-    "europe", "berlin", "amsterdam", "paris", "dublin",
-    "sydney", "melbourne", "australia",
-    "toronto", "canada",
+
     # Remote
     "remote",
 ]
