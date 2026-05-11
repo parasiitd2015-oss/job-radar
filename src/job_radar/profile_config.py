@@ -76,30 +76,164 @@ LOCATIONS_NEGATIVE = [
 ]
 
 # Target companies — bump score when these appear
+# Extended TARGET_COMPANIES_HOT Universe (1000+ Directional Company Expansion)
+
 TARGET_COMPANIES_HOT = {
-    # Big Tech India
-    "google", "alphabet", "meta", "facebook", "amazon", "aws",
-    "microsoft", "apple", "netflix", "uber",
-    # International fintech / SaaS
-    "stripe", "plaid", "ramp", "brex", "mercury",
+    # Big Tech
+    "google", "alphabet", "meta", "facebook", "instagram", "whatsapp",
+    "amazon", "aws", "microsoft", "apple", "netflix", "uber",
+    "tesla", "spacex", "nvidia", "openai", "anthropic", "xai",
+    "oracle", "sap", "adobe", "intel", "amd", "cisco",
+    "ibm", "palantir", "airbnb", "dropbox", "slack", "discord",
+    "spotify", "linkedin", "snap", "pinterest", "reddit",
+    "cloudflare", "databricks", "snowflake", "mongodb", "confluent",
+    "servicenow", "workday", "twilio", "okta", "datadog",
+    "new relic", "hashicorp", "docker", "gitlab", "github",
+    "digitalocean", "akamai", "fastly", "elastic", "redis",
+    "huggingface", "perplexity", "mistral", "stability ai",
+
+    # Global SaaS / Product / AI
     "notion", "linear", "vercel", "figma", "canva",
     "atlassian", "asana", "miro", "rippling", "deel", "remote.com",
-    "hubspot", "salesforce", "zoom", "shopify",
-    # Indian unicorns / late-stage
+    "hubspot", "salesforce", "zoom", "shopify", "webflow",
+    "framer", "loom", "clickup", "monday.com", "airtable",
+    "zapier", "intercom", "segment", "mixpanel", "amplitude",
+    "gainsight", "gong", "outreach", "apollo", "braze",
+    "klaviyo", "mailchimp", "convertkit", "drift", "typeform",
+    "survey monkey", "qualtrics", "freshdesk", "freshchat",
+    "freshservice", "zendesk", "smartsheet", "notable",
+
+    # Fintech Global
+    "stripe", "plaid", "ramp", "brex", "mercury",
+    "wise", "revolut", "nubank", "sofi", "robinhood",
+    "affirm", "klarna", "checkout.com", "marqeta", "block",
+    "square", "cash app", "wise", "wise payments",
+    "coinbase", "kraken", "binance", "ripple", "circle",
+    "chime", "current", "varo", "betterment", "wealthfront",
+    "payoneer", "adyen", "visa", "mastercard", "american express",
+    "jpmorgan", "goldman sachs", "morgan stanley", "blackrock",
+    "blackstone", "bridgewater", "citadel", "jane street",
+
+    # Indian Unicorns / Late Stage
     "razorpay", "cred", "phonepe", "zerodha", "groww", "meesho",
     "zepto", "postman", "freshworks", "zoho", "browserstack",
     "swiggy", "zomato", "ola", "paytm", "policybazaar",
     "upgrad", "byju", "unacademy", "physicswallah",
     "slice", "jupiter", "jar", "fi money", "navi",
     "khatabook", "okcredit", "vedantu", "leadsquared",
-    # Top VCs
+    "urban company", "boAt", "lenskart", "mamaearth", "nykaa",
+    "dream11", "mpl", "gameskraft", "sharechat", "moj",
+    "dailyhunt", "inmobi", "glance", "curefit", "cult.fit",
+    "no broker", "acko", "digit insurance", "coin dcx",
+    "coin switch", "bharatpe", "mobikwik", "cashfree", "pine labs",
+    "open financial", "smallcase", "neo", "indmoney", "ditto",
+    "apna", "naukri", "foundit", "cars24", "spinny",
+    "porter", "blackbuck", "delhivery", "elasticrun", "shadowfax",
+    "elastic run", "uadaan", "udaan", "infra.market",
+    "bizongo", "shiprocket", "captain fresh", "globalbees",
+    "firstcry", "purplle", "dealshare", "magicpin", "payu",
+    "simpl", "kissht", "zestmoney", "freo", "winkl",
+
+    # India SaaS Ecosystem
+    "chargebee", "wingify", "whatfix", "moengage", "webengage",
+    "clevertap", "capillary", "darwinbox", "facilio", "yellow.ai",
+    "observe.ai", "highradius", "innovaccer", "mindtickle",
+    "gupshup", "postman", "survey sparrow", "kissflow",
+    "perfios", "perfios software", "easyrewardz", "tally",
+    "rezo.ai", "ai palette", "rocketlane", "devrev",
+    "exotel", "amagi", "sprinklr", "people strong",
+    "uniphore", "hasura", "edgeverve", "agnikul", "skyroot",
+
+    # Consulting / Strategy
+    "mckinsey", "bain", "bcg", "kearney", "oliver wyman",
+    "lek consulting", "strategy&", "monitor deloitte",
+    "accenture strategy", "ey parthenon", "kpmg", "pwc",
+    "deloitte", "grant thornton", "alvarez marsal",
+
+    # Top VC / PE / Investment
     "peak xv", "sequoia", "accel", "lightspeed", "elevation",
     "nexus venture", "blume", "matrix", "kalaari",
     "sequoia capital", "general catalyst", "tiger global", "softbank",
-    # Conglomerate strategy
+    "a16z", "andreessen horowitz", "benchmark", "greylock",
+    "founders fund", "insight partners", "battery ventures",
+    "bessemer", "y combinator", "yc", "catalyst", "warburg pincus",
+    "advent international", "temasek", "prosus", "naspers",
+    "westbridge", "chiratae", "beenext", "venture highway",
+
+    # Conglomerates / Corporate Strategy
     "tata digital", "tata sons", "reliance", "jio", "bajaj",
-    "mahindra", "adani", "aditya birla",
+    "mahindra", "adani", "aditya birla", "itc", "hul",
+    "hindustan unilever", "nestle", "marico", "godrej",
+    "dabur", "britannia", "asian paints", "pidilite",
+    "ultratech", "vedanta", "jsw", "l&t", "ltimindtree",
+    "infosys", "tcs", "wipro", "tech mahindra", "hcl",
+    "persistent", "mphasis", "coforge", "zensar", "oracle financial",
+
+    # Semiconductor / Deep Tech
+    "arm", "qualcomm", "broadcom", "micron", "marvell",
+    "texas instruments", "synopsys", "cadence", "applied materials",
+    "lam research", "asml", "tsi", "globalfoundries",
+
+    # Cybersecurity
+    "crowdstrike", "sentinelone", "wiz", "zscaler", "palo alto networks",
+    "fortinet", "checkpoint", "cyberark", "netskope", "snyk",
+
+    # Consumer Internet
+    "booking.com", "expedia", "tripadvisor", "agoda", "makemytrip",
+    "oyo", "airasia", "ixigo", "cleartrip", "easemytrip",
+
+    # Gaming
+    "epic games", "riot games", "unity", "roblox", "activision",
+    "electronic arts", "supercell", "niantic", "dream sports",
+
+    # Healthtech
+    "practo", "pharmeasy", "1mg", "apollo health", "mfine",
+    "curebay", "medibuddy", "healthifyme", "sarvam ai",
+
+    # Logistics / Mobility
+    "uber", "lyft", "rapido", "porter", "blusmart",
+    "rivigo", "mahindra logistics", "ecom express",
+
+    # Edtech
+    "coursera", "udemy", "simplilearn", "scaler", "newton school",
+    "masai school", "great learning", "upgrad", "emeritus",
+
+    # AI Native / Agentic
+    "langchain", "pinecone", "weaviate", "twelve labs",
+    "runway", "midjourney", "elevenlabs", "harvey ai",
+    "glean", "adept", "replit", "windsurf", "cursor",
+
+    # High-growth Startups
+    "perplexity ai", "anduril", "scale ai", "helion", "cognition",
+    "suno", "heygen", "character ai", "groq", "turing",
+    "deel", "remote", "multiplier", "safetywing",
+
+    # Additions for breadth
+    "flipkart", "amazon india", "jiocinema", "hotstar",
+    "netmeds", "bookmyshow", "snapdeal", "pepperfry",
+    "wakefit", "bewakoof", "bombay shaving company",
+    "the whole truth", "blue tokai", "chaayos", "wow momo",
+    "rebel foods", "eatclub", "country delight", "ninjacart",
+    "dehaat", "waycool", "gramophone", "agrostar",
+
+    # Enterprise Infra
+    "vmware", "nutanix", "cloudera", "redhat", "suse",
+    "canonical", "grafana labs", "supabase", "planetscale",
+
+    # Media / Creator Economy
+    "substack", "patreon", "beehiiv", "kajabi", "gumroad",
+    "youtube", "twitch", "spotify studios", "anchor",
+
+    # Telecom / Infra
+    "airtel", "vodafone idea", "bsnl", "ericsson", "nokia",
+
+    # Energy / EV
+    "aether", "ather", "ola electric", "tata motors", "hero electric",
+    "exicom", "sun mobility", "battery smart",
+
 }
+
+
 
 # Geo bucket map for sources that accept country codes
 ADZUNA_COUNTRIES = ["in", "gb", "sg", "ae", "au"]  # India, UK, Singapore, UAE, Australia
